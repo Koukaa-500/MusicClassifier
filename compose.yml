@@ -1,0 +1,15 @@
+version: '3'
+services:
+  svm_service:
+    build: ./svm_service
+    ports:
+      - "5000:5000"
+  vgg19_service:
+    build: ./vgg19_service
+    ports:
+      - "5001:5001"
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+ 
